@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="example">
+      <div>
+        <button @click="counter++">Add 1</button>
+        <p>The button above has been clicked {{ counter }} times.</p>
+      </div>
+      <div><button @click="greet">Greet</button></div>
+      <div>
+        <button @click="say('hi')">Say hi</button>
+        <button @click="say('what')">Say what</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      let example = new Vue({
+        el: '#example',
+        data: {
+          counter: 0,
+          name: 'Vue.js',
+        },
+        methods: {
+          greet(event) {
+            alert('Hello ' + this.name + '!')
+            if (event) {
+              alert(event.target.tagName)
+            }
+          },
+          say(message) {
+            alert(message)
+          },
+        },
+      })
+    </script>
+  </body>
+</html>
