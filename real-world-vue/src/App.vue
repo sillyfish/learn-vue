@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <NavBar />
-    <router-view />
+    <router-view :key="$route.fullPath" />
+    <NotificationContainer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import NotificationContainer from './components/NotificationContainer'
 
 export default {
   components: {
+    NotificationContainer,
     NavBar,
   },
 }
@@ -238,5 +241,11 @@ select:focus::ms-value {
 }
 select::ms-expand {
   opacity: 0;
+}
+.-text-error {
+  color: tomato;
+}
+.-text-success {
+  color: #39b982;
 }
 </style>

@@ -7,7 +7,10 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": "Adam",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
       "title": "Cat Cabaret",
       "description": "Yay felines!",
       "location": "Meow Town",
@@ -22,7 +25,10 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": "Adam",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
       "title": "Kitty Cluster",
       "description": "Yay cats!",
       "location": "Catlandia",
@@ -37,12 +43,73 @@
         "name": "Adam"
       },
       "category": "animal welfare",
-      "organizer": "Adam",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam"
+      },
       "title": "Puppy Parade",
       "description": "Yay pups!",
       "location": "Puptown ",
       "date": "2019-02-02T23:27:00.000Z",
       "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 3900760,
+      "category": "nature",
+      "title": "Working?",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 6358419,
+      "category": "animal welfare",
+      "title": "Working?",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 4902705,
+      "category": "education",
+      "title": "Test again",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 7738212,
+      "category": "education",
+      "title": "Ok this time",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 7307204,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Success",
+      "description": "",
+      "location": "",
+      "date": "",
+      "time": "",
       "attendees": []
     }
   ]
