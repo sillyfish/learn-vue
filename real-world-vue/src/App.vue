@@ -248,4 +248,10 @@ select::ms-expand {
 .-text-success {
   color: #39b982;
 }
+.error {
+  border: 1px solid red;
+}
+.errorMessage {
+  color: red;
+}
 </style>

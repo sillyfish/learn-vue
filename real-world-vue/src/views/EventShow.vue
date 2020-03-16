@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="event-header">
-      <span class="eyebrow">@{{ event.time }} on {{ event.date }}</span>
+      <span class="eyebrow">@{{ event.time }} on {{ event.date | date }}</span>
       <h1 class="title">{{ event.title }}</h1>
       <h5>Organized by {{ event.organizer ? event.organizer.name : '' }}</h5>
       <h5>Category: {{ event.category }}</h5>
@@ -31,22 +31,42 @@
 <script>
 // import EventService from '../services/EventService'
 import { mapState } from 'vuex'
+// import NProgress from 'nprogress'
+import store from '@/store/index'
 
 export default {
   name: 'EventShow',
-  props: ['id'],
+  // props: ['id'],
+  props: {
+    event: {
+      type: Object,
+      required: true,
+    },
+  },
   data() {
     return {
       // event: {},
     }
   },
+  /*
   computed: mapState({
     event: state => state.event.event,
   }),
+*/
+  /*
+  beforeRouteEnter(to, from, next) {
+    // NProgress.start()
+    store.dispatch('fetchEvent', to.params.id).then(() => {
+      // NProgress.done()
+      next()
+    })
+  },
+*/
+  /*
   created() {
     this.$store.dispatch('fetchEvent', this.id)
-    console.log(this.event.organizer)
-    /*
+    // console.log(this.event.organizer)
+    /!*
     EventService.getEvent(this.id)
       .then(response => {
         this.event = response.data
@@ -54,8 +74,9 @@ export default {
       .catch(error => {
         console.log(`This is an error: ${error.response}`)
       })
-*/
+*!/
   },
+*/
 }
 </script>
 

@@ -3,8 +3,16 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import 'nprogress/nprogress.css'
+import Vuelidate from 'vuelidate/src'
+
 import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
+
+import DateFilter from '@/filters/date'
+
+Vue.use(Vuelidate)
+Vue.filter('date', DateFilter)
 
 const requireComponent = require.context(
   './components',
