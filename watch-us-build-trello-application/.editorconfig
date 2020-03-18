@@ -1,0 +1,13 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+insert_final_newline = false # 设为true表明使文件以一个空白行结尾，false反之。
+trim_trailing_whitespace = false # 设为true表示会除去换行行首的任意空白字符，false反之。
